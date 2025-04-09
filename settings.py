@@ -9,8 +9,8 @@ DEBUG_ENABLED = False
 DB_CONN = {
     "host": "127.0.0.1",
     "port": 3306,
-    "username": "iissi_user",
-    "password": "iissi$user",
+    "username": "root",
+    "password": "iissi$root",
     "database": "gallery",
 }
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example page</title>
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/utils/include.js"></script>
+</head>
+
+<body class="dark">
+  <div id="page-header"></div>
+  <p>Hello, world!</p>
+  <a href="register.html">Go to register.html</a>
+  <p>My shopping list:</p>
+
+  <ul>
+    <li>Oranges</li>
+    <li>Pears</li>
+    <li>Apples</li>
+  </ul>
+  </p>
+  <h2>Recent pictures</h2>
+  <a href="upload_picture.html">Upload a new picture</a>
+  <div class="gallery-container">
+    <div class="photo-block">
+      <div class="photo-header-block">
+        <h2 class="photo-title">Samoyed</h2>
+        <h3 class="photo-score">Score: 4.52</h3>
+      </div>
+      <div class="photo-image-block">
+        <img class="photo-image" src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg">
+      </div>
+      <div class="photo-metadata-block">
+        <p class="photo-description">A very good boy.</p>
+      </div>
+      <div class="photo-edit-block">
+        <button>Edit this photo</button>
+        <button>Delete this photo</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    include("header.html","#page-header");
+  </script>
+</body>
+
+</html>

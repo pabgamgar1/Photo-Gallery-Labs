@@ -1,0 +1,54 @@
+div.photo-block {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5%;
+}
+div.photo-title {
+  font-size: 140%;
+  font-family: Arial;
+  text-decoration: underline;
+}
+div.photo-score {
+  font-family: 130%;
+  font-family: monospace;
+}
+img.photo-image {
+  width: 100%;
+  height: auto;
+}
+body.dark {
+  background-color: #222222;
+  color: #eeeeee;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+div.title-block {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #333333;
+}
+#title {
+  font-size: 300%;
+  text-decoration: none;
+  color: #bbbbbb;
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+#subtitle {
+  font-size: 120%;
+  font-style: italic;
+  color: #bbbbbb;
+  font-family: monospace;
+}
+div.navigation > a {
+  color: white;
+  font-size: 120%;
+  background-color: #555555;
+  font-family: monospace;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 150px;
+}

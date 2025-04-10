@@ -6,10 +6,48 @@
   <link rel="icon" href="/images/favicon.ico" />
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/utils/include.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <script src="/js/libs/bootstrap.min.js"></script>
 </head>
 
 <body class="dark">
   <div id="page-header"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navigation index</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Recent photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Trending photos
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-light" href="trending_users.html">Trending users</a></li>
+              <li><a class="dropdown-item text-light" href="trending_photos.html">Trending photos
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <p>Hello, world!</p>
   <a href="register.html">Go to register.html</a>
   <p>My shopping list:</p>
@@ -23,25 +61,191 @@
   <h2>Recent pictures</h2>
   <a href="upload_picture.html">Upload a new picture</a>
   <div class="gallery-container">
-    <div class="photo-block">
-      <div class="photo-header-block">
-        <h2 class="photo-title">Samoyed</h2>
-        <h3 class="photo-score">Score: 4.52</h3>
+    <div class="photo-block"></div>
+    <div class="photo-block"></div>
+  </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md">
+        Row 1 Column 1
       </div>
-      <div class="photo-image-block">
-        <img class="photo-image" src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg">
+      <div class="col-md">
+        Row 1 Column 2
       </div>
-      <div class="photo-metadata-block">
-        <p class="photo-description">A very good boy.</p>
+    </div>
+    <div class="row text-center">
+      <div class="col-md">
+        Row 2 Column 1
       </div>
-      <div class="photo-edit-block">
-        <button>Edit this photo</button>
-        <button>Delete this photo</button>
+      <div class="col-md">
+        Row 2 Column 2
+      </div>
+      <div class="col-md">
+        Row 2 Column 3
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-9">
+        Wide column (75%)
+      </div>
+      <div class="col-md">
+        This column takes up the remaining space
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="username-input">Username:</label>
+        <input type="text" class="form-control bg-dark text-light" id="username-input" name="username"
+          placeholder="Username">
+      </div>
+      <div class="form-group">
+        <label for="password-input">Password:</label>
+        <input type="password" class="form-control bg-dark text-light" id="password-input" name="password"
+          placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="container">
+    <div class="form-group">
+      <label for="select-input">Select element from a list:</label>
+      <select class="form-control" id="select-input" name="select">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkbox-id" name="checkbox">
+      <label class="form-check-label" for="checkbox-id">
+        Option with a checkbox
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio-button" value="1" checked>
+      <label class="form-check-label">
+        Option 1
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio-button" value="2">
+      <label class="form-check-label">
+        Option 2
+      </label>
+    </div>
+  </div>
+  <div class="container">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger" disabled>Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info" disabled>Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark" disabled>Dark</button>
+  </div>
+  <div class="container">
+    This photo has the following categories:
+    <span class="badge bg-primary">Landscapes</span>
+    <span class="badge bg-primary">Nature</span>
+  </div>
+  <div class="container">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-primary">Element 1</li>
+      <li class="list-group-item list-group-item-success">Element 2</li>
+      <li class="list-group-item list-group-item-warning">Element 3</li>
+      <li class="list-group-item list-group-item-danger">Element 4</li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-light bg-dark">
+          <img
+            src="https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488"
+            class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center">Card title</h5>
+            <p class="card-text">Card text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md">
+        <h3>Recent pictures</h3>
+      </div>
+      <hr>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card bg-dark text-light">
+          <a href="photo_detail.html">
+            <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Samoyed</h5>
+            <p class="card-text">A very good boy.</p>
+            <p class="text-end">@user1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-light">
+          <a href="photo_detail.html">
+            <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Samoyed</h5>
+            <p class="card-text">A very good boy.</p>
+            <p class="text-end">@user1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-light">
+          <a href="photo_detail.html">
+            <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Samoyed</h5>
+            <p class="card-text">A very good boy.</p>
+            <p class="text-end">@user1</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <script>
-    include("header.html","#page-header");
+    include("header.html", "#page-header");
+    const photoBlocks = document.querySelectorAll('.photo-block');
+
+    photoBlocks.forEach(block => {
+      block.innerHTML += `
+    <div class="photo-header-block">
+      <h2 class="photo-title">Samoyed</h2>
+      <h3 class="photo-score">Score: 4.52</h3>
+    </div>
+    <div class="photo-image-block">
+      <img class="photo-image" src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg">
+    </div>
+    <div class="photo-metadata-block">
+      <p class="photo-description">A very good boy.</p>
+    </div>
+    <div class="photo-edit-block">
+      <button>Edit this photo</button>
+      <button>Delete this photo</button>
+    </div>
+  `;
+    });
   </script>
 </body>
 

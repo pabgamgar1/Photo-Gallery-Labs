@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example page</title>
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/utils/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+</head>
+
+<body class="dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md">
+                <h3>Samoyed</h3>
+                <h6>A very good boy</h6>
+                <p>Uploaded by <a href="user_profile.html">User 1</a> on 12/01/2021</p>
+                <hr>
+                <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="img-fluid">
+            </div>
+            <div>
+                <button class="btn btn-primary">Edit this photo</button>
+                <button class="btn btn-danger">Delete this photo</button>
+            </div>
+        </div>
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="rating-input">Rate this photo:</label>
+                    <select id="rating-input" name="rating" class="form-control">
+                        <option value="1">*</option>
+                        <option value="2">**</option>
+                        <option value="3">***</option>
+                        <option value="4">****</option>
+                        <option value="5">*****</option>
+                    </select>
+                    <button type="submit" class="btn btn-success">Rate</button>
+                </div>
+            </form>
+        </div>
+        <div class="row text-center">
+            <div class="col-md">
+                <a href="index.html" class="btn btn-primary">Return to the gallery</a>
+            </div>
+        </div>
+        <h3 class="text-center mt-4">Register a new user</h3>
+        <hr>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="firstname-input">First name:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="firstname-input" name="firstName"
+                        placeholder="First name">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="lastname-input">Last name:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="lastname-input" name="lastName"
+                        placeholder="Last name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="email-input">Email:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="email-input" name="email"
+                        placeholder="Email">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="phone-input">Phone number:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="phone-input" name="phone"
+                        placeholder="Phone number">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="username-input">Username:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="username-input" name="username"
+                        placeholder="Username">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="password-input">Password:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="password-input" name="password"
+                        placeholder="Password">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="repeatpassword-input">Repeat password:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="repeatpassword-input"
+                        name="repeatpassword" placeholder="Repeat password">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md text-center">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

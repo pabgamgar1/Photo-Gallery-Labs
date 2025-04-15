@@ -52,3 +52,9 @@ div.navigation > a {
   display: inline-block;
   min-width: 150px;
 }
+
+img.photo-user-avatar {
+  max-width: 25px;
+  height: auto;
+  border-radius: 50%;
+}

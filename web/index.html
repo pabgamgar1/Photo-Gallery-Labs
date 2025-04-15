@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="/js/libs/bootstrap.min.js"></script>
   <script src="js/index.js" type="module"></script>
+  <script src="js/libs/axios.min.js"></script>
 </head>
 
 <body class="dark">
@@ -49,6 +50,7 @@ navigation">
       </div>
     </div>
   </nav>
+  <div id="errors"></div>
   <p>Hello, world!</p>
   <a href="register.html">Go to register.html</a>
   <p>My shopping list:</p>
@@ -61,9 +63,9 @@ navigation">
   </p>
   <h2>Recent pictures</h2>
   <a href="upload_picture.html">Upload a new picture</a>
-  <div class="gallery-container">
-    <div class="photo-block"></div>
-    <div class="photo-block"></div>
+  <div class="gallery-container" id="gallery-container">
+    <!-- <div class="photo-block"></div>
+    <div class="photo-block"></div> -->
   </div>
   <div class="container">
     <div class="row text-center">

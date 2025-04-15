@@ -9,39 +9,52 @@
 
 "use strict";
 
-import { BASE_URL, requestOptions } from './common.js';
+import { BASE_URL, requestOptions } from "./common.js";
 
 const PhotosAPI_auto = {
+  /** Gets all entries from 'Photos' */
+  getAll: async function () {
+    let response = await axios.get(`${BASE_URL}/photos`, requestOptions);
+    return response.data;
+  },
 
-    /** Gets all entries from 'Photos' */
-    getAll: async function() {
-        let response = await axios.get(`${BASE_URL}/photos`, requestOptions);
-        return response.data;
-    },
+  /** Gets an entry from 'Photos' by its primary key */
+  getById: async function (photoId) {
+    let response = await axios.get(
+      `${BASE_URL}/photos/${photoId}`,
+      requestOptions,
+    );
+    return response.data[0];
+  },
 
-    /** Gets an entry from 'Photos' by its primary key */
-    getById: async function(photoId) {
-        let response = await axios.get(`${BASE_URL}/photos/${photoId}`, requestOptions);
-        return response.data[0];
-    },
+  /** Creates a new entry in 'Photos' */
+  create: async function (formData) {
+    let response = await axios.post(
+      `${BASE_URL}/photos`,
+      formData,
+      requestOptions,
+    );
+    return response.data;
+  },
 
-    /** Creates a new entry in 'Photos' */
-    create: async function(formData) {
-        let response = await axios.post(`${BASE_URL}/photos`, formData, requestOptions);
-        return response.data;
-    },
+  /** Updates an existing entry in 'Photos' by its primary key */
+  update: async function (formData, photoId) {
+    let response = await axios.put(
+      `${BASE_URL}/photos/${photoId}`,
+      formData,
+      requestOptions,
+    );
+    return response.data;
+  },
 
-    /** Updates an existing entry in 'Photos' by its primary key */
-    update: async function(formData, photoId) {
-        let response = await axios.put(`${BASE_URL}/photos/${photoId}`, formData, requestOptions);
-        return response.data;
-    },
-
-    /** Deletes an existing entry in 'Photos' by its primary key */
-    delete: async function(photoId) {
-        let response = await axios.delete(`${BASE_URL}/photos/${photoId}`, requestOptions);
-        return response.data;
-    },
+  /** Deletes an existing entry in 'Photos' by its primary key */
+  delete: async function (photoId) {
+    let response = await axios.delete(
+      `${BASE_URL}/photos/${photoId}`,
+      requestOptions,
+    );
+    return response.data;
+  },
 };
 
 export { PhotosAPI_auto };

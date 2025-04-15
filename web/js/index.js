@@ -53,6 +53,30 @@ function main() {
 
   let gallery = galleryRenderer.asCardGallery(photos);
   container.appendChild(gallery);
+
+  let button = document.getElementById("test-button");
+  button.onclick = clickHandler;
+
+  let cards = document.querySelectorAll("div.card");
+  for (let card of cards) {
+    card.onmouseenter = handleMouseEnter;
+    card.onmouseleave = handleMouseLeave;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", main);
+
+function clickHandler(event) {
+  let target = event.target;
+  let text = target.textContent;
+  alert(text);
+}
+
+function handleMouseEnter(event) {
+  let card = event.target;
+  card.style.border = "2px solid blue";
+}
+function handleMouseLeave(event) {
+  let card = event.target;
+  card.style.border = "none";
+}
